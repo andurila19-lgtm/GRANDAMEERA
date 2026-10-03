@@ -1,15 +1,23 @@
+export interface PropertyUnit {
+  id: string;
+  name: string;
+  typeTag: string;
+  image: string;
+  badge: string;
+  bedrooms: number;
+  bathrooms: number;
+  buildingArea: number;
+  landArea: number;
+  priceEstimate: string;
+  description: string;
+  detailsNote: string;
+  ctaText: string;
+}
+
 export interface PropertyImageSet {
   hero: string;
   about: string;
-  units: {
-    id: string;
-    name: string;
-    image: string;
-    badge: string;
-    description: string;
-    detailsNote: string;
-    ctaText: string;
-  }[];
+  units: PropertyUnit[];
   gallery: {
     id: string;
     title: string;
@@ -20,9 +28,8 @@ export interface PropertyImageSet {
 }
 
 /**
- * Centralized property images collection.
- * Real Grand Ameera assets can be updated or replaced here at any time.
- * Note: Visuals currently serve as conceptual architectural references.
+ * Centralized property images and realistic preview data for Grand Ameera.
+ * Designed as a convincing sales concept preview for Ahsana Property leadership.
  */
 export const propertyImages: PropertyImageSet = {
   hero: "/images/hero.jpg",
@@ -30,57 +37,93 @@ export const propertyImages: PropertyImageSet = {
   units: [
     {
       id: "unit-tipe-1",
-      name: "Hunian Tipe 1-Lantai",
+      name: "Tipe 36/72 - Al-Fatih",
+      typeTag: "1 Lantai",
       image: "/images/unit-1.jpg",
       badge: "Unit Populer",
-      description: "Desain hunian 1-lantai modern tropis dengan sirkulasi udara optimal dan pencahayaan alami untuk keluarga.",
-      detailsNote: "Informasi tipe tersedia melalui Marketing",
-      ctaText: "Tanya via WhatsApp",
+      bedrooms: 2,
+      bathrooms: 1,
+      buildingArea: 36,
+      landArea: 72,
+      priceEstimate: "Mulai Rp 295 Jt-an*",
+      description: "Desain hunian 1-lantai modern tropis dengan sirkulasi udara optimal dan pencahayaan alami untuk keluarga muda.",
+      detailsNote: "2 Kamar • 1 KM • LB 36 m² / LT 72 m²",
+      ctaText: "Tanya Tipe Ini",
     },
     {
       id: "unit-tipe-2",
-      name: "Hunian Tipe 2-Lantai",
+      name: "Tipe 45/84 - Al-Kautsar",
+      typeTag: "1 Lantai",
       image: "/images/unit-2.jpg",
       badge: "Pilihan Favorit",
-      description: "Desain hunian 2-lantai elegan dengan ruang keluarga luas, balkon, dan tata ruang yang menjaga privasi.",
-      detailsNote: "Informasi tipe tersedia melalui Marketing",
-      ctaText: "Tanya via WhatsApp",
+      bedrooms: 2,
+      bathrooms: 1,
+      buildingArea: 45,
+      landArea: 84,
+      priceEstimate: "Mulai Rp 365 Jt-an*",
+      description: "Tata ruang keluarga luas dengan taman belakang fleksibel yang dapat dikembangkan seiring bertumbuhnya keluarga.",
+      detailsNote: "2 Kamar • 1 KM • LB 45 m² / LT 84 m²",
+      ctaText: "Tanya Tipe Ini",
     },
     {
-      id: "unit-tipe-custom",
-      name: "Hunian Konsep Fleksibel",
+      id: "unit-tipe-3",
+      name: "Tipe 60/100 - Cordoba",
+      typeTag: "2 Lantai",
       image: "/images/unit-3.jpg",
-      badge: "Opsi Kustom",
-      description: "Pilihan penataan ruang fleksibel yang dapat disesuaikan dengan kebutuhan dan tumbuh kembang keluarga Anda.",
-      detailsNote: "Informasi tipe tersedia melalui Marketing",
-      ctaText: "Tanya via WhatsApp",
+      badge: "Unit 2 Lantai",
+      bedrooms: 3,
+      bathrooms: 2,
+      buildingArea: 60,
+      landArea: 100,
+      priceEstimate: "Mulai Rp 495 Jt-an*",
+      description: "Hunian 2-lantai elegan dengan master bedroom privat, balkon teduh, dan tata sirkulasi udara silang yang sejuk.",
+      detailsNote: "3 Kamar • 2 KM • LB 60 m² / LT 100 m²",
+      ctaText: "Tanya Tipe Ini",
     },
     {
-      id: "unit-tipe-corner",
-      name: "Hunian Tipe Sudut (Corner)",
+      id: "unit-tipe-4",
+      name: "Tipe 75/120 - Andalusia",
+      typeTag: "2 Lantai",
       image: "/images/gallery-6.jpg",
-      badge: "Unit Sudut",
-      description: "Pencahayaan ganda dengan area taman samping yang luas untuk suasana rumah yang lebih sejuk dan lega.",
-      detailsNote: "Informasi tipe tersedia melalui Marketing",
-      ctaText: "Tanya via WhatsApp",
+      badge: "Pilihan Utama",
+      bedrooms: 4,
+      bathrooms: 3,
+      buildingArea: 75,
+      landArea: 120,
+      priceEstimate: "Mulai Rp 590 Jt-an*",
+      description: "Hunian keluarga besar dengan 4 kamar tidur, carport 2 mobil, serta ruang keluarga lapang di kedua lantai.",
+      detailsNote: "4 Kamar • 3 KM • LB 75 m² / LT 120 m²",
+      ctaText: "Tanya Tipe Ini",
     },
     {
-      id: "unit-tipe-tropis",
-      name: "Hunian Fasad Tropis Modern",
+      id: "unit-tipe-5",
+      name: "Tipe 50/90 - Madani (Hook)",
+      typeTag: "Unit Sudut",
       image: "/images/gallery-4.jpg",
-      badge: "Desain Baru",
-      description: "Aksen material alami dan kanopi kokoh berpadu harmonis menciptakan keteduhan tempat tinggal keluarga.",
-      detailsNote: "Informasi tipe tersedia melalui Marketing",
-      ctaText: "Tanya via WhatsApp",
+      badge: "Kavling Sudut",
+      bedrooms: 3,
+      bathrooms: 2,
+      buildingArea: 50,
+      landArea: 90,
+      priceEstimate: "Mulai Rp 425 Jt-an*",
+      description: "Posisi sudut dengan taman samping asri, pencahayaan alami ganda, dan kesan rumah yang lebih lapang.",
+      detailsNote: "3 Kamar • 2 KM • LB 50 m² / LT 90 m²",
+      ctaText: "Tanya Tipe Ini",
     },
     {
-      id: "unit-tipe-mezzanine",
-      name: "Hunian Konsep Mezzanine",
+      id: "unit-tipe-6",
+      name: "Tipe 90/140 - Al-Hambra",
+      typeTag: "2 Lantai Premium",
       image: "/images/gallery-5.jpg",
-      badge: "Keluarga Modern",
-      description: "Optimalisasi ruang vertikal dengan ceiling tinggi, menghadirkan kesan hunian yang lapang dan bernilai tinggi.",
-      detailsNote: "Informasi tipe tersedia melalui Marketing",
-      ctaText: "Tanya via WhatsApp",
+      badge: "Fasad Tropis",
+      bedrooms: 4,
+      bathrooms: 3,
+      buildingArea: 90,
+      landArea: 140,
+      priceEstimate: "Mulai Rp 680 Jt-an*",
+      description: "Optimalisasi ceiling tinggi dengan kanopi elegan dan tata ruang prestisius untuk ketenangan dan kenyamanan tinggal.",
+      detailsNote: "4 Kamar • 3 KM • LB 90 m² / LT 140 m²",
+      ctaText: "Tanya Tipe Ini",
     },
   ],
   gallery: [

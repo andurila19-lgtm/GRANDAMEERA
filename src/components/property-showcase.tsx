@@ -52,7 +52,14 @@ export function PropertyShowcase() {
                 <PropertyCard
                   id={unit.id}
                   name={unit.name}
+                  typeTag={unit.typeTag}
                   image={unit.image}
+                  badge={unit.badge}
+                  bedrooms={unit.bedrooms}
+                  bathrooms={unit.bathrooms}
+                  buildingArea={unit.buildingArea}
+                  landArea={unit.landArea}
+                  priceEstimate={unit.priceEstimate}
                   description={unit.description}
                   detailsNote={unit.detailsNote}
                   ctaText={unit.ctaText}

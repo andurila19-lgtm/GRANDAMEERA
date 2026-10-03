@@ -71,6 +71,13 @@ export function Footer() {
             </a>
           </div>
 
+          {/* Subtle Concept Preview Disclaimer */}
+          <div className="w-full pt-1">
+            <p className="text-[10px] text-[#736961] italic leading-relaxed px-2">
+              Catatan: Konten pada halaman ini merupakan contoh konsep dan dapat disesuaikan dengan data, unit, fasilitas, dan informasi resmi Grand Ameera.
+            </p>
+          </div>
+
           {/* Divider & Copyright */}
           <div className="w-full pt-3 border-t border-[#D5C4B4]/70 flex flex-col items-center gap-0.5 text-[10px] text-[#6C635B]">
             <p>{BRAND_INFO.copyright}</p>
@@ -208,8 +215,15 @@ export function Footer() {
 
           </div>
 
+          {/* Subtle Concept Preview Disclaimer */}
+          <div className="mt-8 pt-4 border-t border-[#D5C4B4]/60 text-center">
+            <p className="text-xs text-[#736961] italic leading-relaxed">
+              Catatan: Konten pada halaman ini merupakan contoh konsep dan dapat disesuaikan dengan data, unit, fasilitas, dan informasi resmi Grand Ameera.
+            </p>
+          </div>
+
           {/* Desktop Bottom Bar */}
-          <div className="mt-12 pt-6 border-t border-[#D5C4B4] flex items-center justify-between gap-4 text-xs text-[#6C635B]">
+          <div className="mt-6 pt-4 border-t border-[#D5C4B4] flex items-center justify-between gap-4 text-xs text-[#6C635B]">
             <p>{BRAND_INFO.copyright}</p>
             <p>Grand Ameera • Perumahan Syariah Madiun</p>
           </div>

@@ -97,9 +97,12 @@ export function Hero() {
                         className="text-xs sm:text-sm font-bold text-[#221C18] bg-transparent outline-none cursor-pointer w-full appearance-none pr-5 leading-none"
                       >
                         <option value="Semua Tipe">Semua Tipe</option>
-                        <option value="Tipe 1-Lantai">Tipe 1-Lantai</option>
-                        <option value="Tipe 2-Lantai">Tipe 2-Lantai</option>
-                        <option value="Tipe Fleksibel">Tipe Fleksibel</option>
+                        <option value="Tipe 36/72 - Al-Fatih">Tipe 36/72 (1 Lantai)</option>
+                        <option value="Tipe 45/84 - Al-Kautsar">Tipe 45/84 (1 Lantai)</option>
+                        <option value="Tipe 60/100 - Cordoba">Tipe 60/100 (2 Lantai)</option>
+                        <option value="Tipe 75/120 - Andalusia">Tipe 75/120 (2 Lantai)</option>
+                        <option value="Tipe 50/90 - Madani">Tipe 50/90 (Hook)</option>
+                        <option value="Tipe 90/140 - Al-Hambra">Tipe 90/140 (2 Lantai)</option>
                       </select>
                       <ChevronDown className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-[#7A7067] absolute right-0 pointer-events-none" />
                     </div>
